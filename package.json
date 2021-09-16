@@ -1,6 +1,7 @@
 {
 	"name": "top-app",
 	"version": "0.1.0",
+	"homepage": "https://UraShatunow.github.io/top-app-demo",
 	"private": true,
 	"scripts": {
 		"prepare": "husky install",
@@ -9,7 +10,9 @@
 		"debug": "NODE_OPTIONS='--inspect' next dev",
 		"build": "next build",
 		"start": "next start",
-		"stylelint": "stylelint \"**/*.css\" --fix"
+		"stylelint": "stylelint \"**/*.css\" --fix",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
@@ -31,6 +34,7 @@
 		"eslint": "^7.23.0",
 		"eslint-config-next": "^11.1.2",
 		"eslint-plugin-react-hooks": "^4.2.0",
+		"gh-pages": "^3.2.3",
 		"husky": "^6.0.0",
 		"stylelint": "^13.12.0",
 		"stylelint-config-standard": "^21.0.0",
