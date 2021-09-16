@@ -15,7 +15,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           registry: docker.pkg.github.com
-          name: docker.pkg.github.com/alaricode/top-app-demo/top-app-demo
+          name: docker.pkg.github.com/UraShatunow/top-app-demo/top-app-demo
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: "develop"
